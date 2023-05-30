@@ -1,0 +1,292 @@
+body
+{
+    overflow-y: visible;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 100%;
+    background: #d6ffe5; 
+}
+
+.contenedor
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.encabezado
+{
+    padding-top: 1%;
+    margin-left: 1%;   
+}
+
+.encabezado img
+{
+    width: 10%;
+    transition: 1s;
+}
+
+.encabezado img:hover
+{
+    transition: 1s;
+    width: 12%;
+}
+
+.encabezado h2
+{
+    margin: 1.5% 0%;
+    width: 76%;
+    position: absolute;
+    display: inline;
+    text-align: left;
+    text-indent: 4%;
+    font-size: 2em;
+    transition: 1s;
+}
+
+.encabezado h2:hover
+{
+    font-size: 2.2em;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.txtArea
+{    
+    position: absolute;
+    width: 42%;
+    height: 45%;
+    left: 12%;
+    top: 15.5%;
+    padding: 2% 2%;
+    background: #b7dfc6;
+    border: 1px solid black;
+    border-radius: 1%;
+    transition: 1s;
+    color: #0A3871;
+    font-size: 25px;
+}
+
+::placeholder { color: #0A3871; }
+.txtArea:hover
+{
+    transition: 1s;
+    border-radius: 7%;
+}
+
+.txtArea2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0.1%;
+    gap: 16px;  
+    width: 25%;
+    height: 53%;
+    left: 64%;
+    top: 15.5%;
+    transition: 1s;
+    border: 1px solid black;
+    border-radius: 7%;
+}
+
+.txtArea2:hover
+{
+    transition: 1s;
+    border-radius: 1%;
+    
+}
+
+.txtArea2 textarea
+{
+    padding: 3%;
+    width: 94%;
+    height: 100%;
+    left: 99%;
+    top: 100%;
+    margin-bottom: 1%;
+    border-radius: 7%;
+    transition: 1s;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0A3871;
+    background: #b7dfc6;
+    background-image: url(recursos/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.txtArea2 textarea:hover
+{
+    transition: 1s;
+    border-radius: 1%;
+}
+
+.botones
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0%;
+    position: absolute;
+    width: 40%;
+    left: 12% ;
+    top: 72%;
+    right: 100%;
+}
+.botones:hover
+{
+    transition: 0.2s;
+}
+
+.botonEncriptar, .botonDesencriptar
+{
+    flex: auto;
+    padding: 1%;
+    width: 1%;
+    margin: 0% 10%;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 19px;
+    color:#0A3871;
+    border: 2px solid #0A3871;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.botonEncriptar:hover, .botonDesencriptar:hover
+{
+    font-size: 1.3em;
+    background: #0A3871; 
+    color: #b7dfc6;
+    transition: 0.2s;
+
+}
+
+.txtArea2 button
+{
+    width: 40%;
+    height: 15%;
+    margin-bottom: 2%;
+    padding: 1%;
+    font-size: 1.5em;
+    color:#0A3871;
+    border: 2px solid #0A3871;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.txtArea2 button:hover
+{
+    font-size: 1.3em;
+    background: #0A3871; 
+    color: #b7dfc6;
+    transition: 0.2s;;
+}
+
+.piePagina
+{
+    font-size:18px;
+    color: #0A3871;
+    line-height: 120%;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 40%;
+    text-align: center;
+}
+
+/* - DISEÑO RESPONSIVO - */
+@media (max-width: 700px)
+{
+    .contenedor
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .encabezado img
+    {
+        display: none;
+    }
+
+    .encabezado h2
+    {
+        margin: 1%;
+        color: #0A3871;
+        text-indent: 0%;
+        text-align: center;
+        width: 90%;
+        line-height: 100%;
+    }
+
+    .txtArea
+    {
+        width: 92%;
+        left: 2%;
+        right: 1%;
+    }
+
+    .botones
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0%;
+    position: absolute;
+    width: 95%;
+    left: 0% ;
+    top: 72%;
+    right: 0%;
+}
+
+.botones:hover
+{
+    transition: 0.2s;
+}
+
+.botonEncriptar, .botonDesencriptar
+{
+    padding: 2%;
+    width: max-content;
+    margin: 0% 5%;
+    gap: 8%;
+    font-size: 1.2em;
+    text-align: center;
+    color:#0A3871;
+    border: 2px solid #0A3871;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+    .txtArea2
+    {
+        width: 96%;
+        height: 50%;
+        left: 2%;
+        right: 1%;
+        top: 80%;
+        bottom: 10%;
+    }
+
+    .piePagina
+    {
+        position: absolute;
+        padding: 1%;  
+        width: 90%;
+        height: 1%;
+        left: 1%;
+        top: 130%;
+        font-size: 20px;
+        color: #0A3871;
+        font-weight: bold;
+        text-align: left;
+    }
+}
